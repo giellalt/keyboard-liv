@@ -1,9 +1,32 @@
 displayNames:
   liv: Līv
   en: Livonian
-
-decimal: ','
-
+android:
+  config:
+#    spellerPackageKey: https://pahkat.uit.no/main/packages/speller-liv?channel=nightly&platform=mobile
+#    spellerPath: liv.bhfst
+  primary:
+    layers:
+      default: |
+        ä õ e r t y u i o p ǭ
+        a s d f g h j k l ȯ ö
+        \s{shift} z x c v b n m ʼ \s{backspace}
+      shift: |
+        Ä Õ E R T Y U I O P Ǭ
+        A S D F G H J K L Ȯ Ö
+        \s{shift} Z X C V B N M ʼ \s{backspace}
+  tablet-600:
+    layers:
+      default: |
+        ʼ w ǩ ǥ ǧ ŋ đ ǯ ʒ ö ʹ
+        â š e r t y u i o p å
+        a s d f g h j k l õ ä
+        \s{shift} ž z č c v b n m \s{backspace}
+      shift: |
+        ʼ W Ǩ Ǥ Ǧ Ŋ Đ Ǯ Ʒ Ö ʹ
+        Â Š E R T Y U I O P Å
+        A S D F G H J K L Õ Ä
+        \s{shift} Ž Z Č C V B N M \s{backspace}
 macOS:
   primary:
     layers:
@@ -118,208 +141,182 @@ windows:
     alt: ['^', '´']
     alt+caps: ['´']
 transforms:
-  ´:
-    ' ': ´
-    a: á
-    A: Á
-    b: b́
-    B: B́
-    c: ć
-    C: Ć
-    d: d́
-    D: D́
-    e: é
-    E: É
-    f: f́
-    F: F́
-    g: ǵ
-    G: Ǵ
-    h: h́
-    H: H́
-    i: i̬
-    I: I̬
-    k: ḱ
-    K: Ḱ
-    l: ĺ
-    L: Ĺ
-    m: ḿ
-    M: Ḿ
-    'n': ń
-    'N': Ń
-    o: ó
-    O: Ó
-    p: ṕ
-    P: Ṕ
-    r: ŕ
-    R: Ŕ
-    s: ś
-    S: Ś
-    t: t́
-    T: T́
-    v: v́
-    V: V́
-    z: ź
-    Z: Ź
-    u: u̬
-    U: U̬
-    ü: ü̬
-    Ü: Ü̬
-    'y': ý
-    'Y': Ý
-  ˉ:
-    ' ': ˉ
-    a: ā
-    A: Ā
-    c: č
-    C: Č
-    d: ḑ
-    D: Ḑ
-    e: ē
-    E: Ē
-    g: ģ
-    G: Ǵ
-    i: ī
-    I: Ī
-    k: ķ
-    K: Ķ
-    l: ļ
-    L: Ļ
-    m: ȭ
-    M: Ȭ
-    'n': ņ
-    'N': Ņ
-    o: ō
-    O: Ō
-    p: ǭ
-    P: Ǭ
-    q: ǟ
-    Q: Ǟ
-    r: ŗ
-    R: Ŗ
-    s: š
-    S: Š
-    t: ț
-    T: Ț
-    u: ū
-    U: Ū
-    w: ǖ
-    W: Ǖ
-    'y': ȳ
-    'Y': Ȳ
-    z: ž
-    Z: Ž
-  ¨:
-    ' ': ¨
-    a: ä
-    A: Ä
-    e: ë
-    E: Ë
-    i: ï
-    I: Ï
-    o: ö
-    O: Ö
-    z: ż
-    Z: Ż
-    u: ü
-    U: Ü
-  ˇ:
-    ' ': ˇ
-    c: č
-    C: Č
-    d: ď
-    D: Ď
-    e: ě
-    E: Ě
-    l: ľ
-    L: Ľ
-    'n': ň
-    'N': Ň
-    o: ǒ
-    O: Ǒ
-    r: ř
-    R: Ř
-    s: š
-    S: Š
-    z: ž
-    Z: Ž
-    t: ť
-    T: Ť
+  '´':
+    ' ': '´'
+    'a': 'á'
+    'A': 'Á'
+    'b': 'b́'
+    'B': 'B́'
+    'c': 'ć'
+    'C': 'Ć'
+    'd': 'd́'
+    'D': 'D́'
+    'e': 'é'
+    'E': 'É'
+    'f': 'f́'
+    'F': 'F́'
+    'g': 'ǵ'
+    'G': 'Ǵ'
+    'h': 'h́'
+    'H': 'H́'
+    'i': 'i̬'
+    'I': 'I̬'
+    'k': 'ḱ'
+    'K': 'Ḱ'
+    'l': 'ĺ'
+    'L': 'Ĺ'
+    'm': 'ḿ'
+    'M': 'Ḿ'
+    'n': 'ń'
+    'N': 'Ń'
+    'o': 'ó'
+    'O': 'Ó'
+    'p': 'ṕ'
+    'P': 'Ṕ'
+    'r': 'ŕ'
+    'R': 'Ŕ'
+    's': 'ś'
+    'S': 'Ś'
+    't': 't́'
+    'T': 'T́'
+    'v': 'v́'
+    'V': 'V́'
+    'z': 'ź'
+    'Z': 'Ź'
+    'u': 'u̬'
+    'U': 'U̬'
+    'ü': 'ü̬'
+    'Ü': 'Ü̬'
+    'y': 'ý'
+    'Y': 'Ý'
+  'ˉ':
+    ' ': 'ˉ'
+    'a': 'ā'
+    'A': 'Ā'
+    'c': 'č'
+    'C': 'Č'
+    'd': 'ḑ'
+    'D': 'Ḑ'
+    'e': 'ē'
+    'E': 'Ē'
+    'g': 'ģ'
+    'G': 'Ǵ'
+    'i': 'ī'
+    'I': 'Ī'
+    'k': 'ķ'
+    'K': 'Ķ'
+    'l': 'ļ'
+    'L': 'Ļ'
+    'm': 'ȭ'
+    'M': 'Ȭ'
+    'n': 'ņ'
+    'N': 'Ņ'
+    'o': 'ō'
+    'O': 'Ō'
+    'p': 'ǭ'
+    'P': 'Ǭ'
+    'q': 'ǟ'
+    'Q': 'Ǟ'
+    'r': 'ŗ'
+    'R': 'Ŗ'
+    's': 'š'
+    'S': 'Š'
+    't': 'ț'
+    'T': 'Ț'
+    'u': 'ū'
+    'U': 'Ū'
+    'w': 'ǖ'
+    'W': 'Ǖ'
+    'y': 'ȳ'
+    'Y': 'Ȳ'
+    'z': 'ž'
+    'Z': 'Ž'
+  '¨':
+    ' ': '¨'
+    'a': 'ä'
+    'A': 'Ä'
+    'e': 'ë'
+    'E': 'Ë'
+    'i': 'ï'
+    'I': 'Ï'
+    'o': 'ö'
+    'O': 'Ö'
+    'z': 'ż'
+    'Z': 'Ż'
+    'u': 'ü'
+    'U': 'Ü'
+  'ˇ':
+    ' ': 'ˇ'
+    'c': 'č'
+    'C': 'Č'
+    'd': 'ď'
+    'D': 'Ď'
+    'e': 'ě'
+    'E': 'Ě'
+    'l': 'ľ'
+    'L': 'Ľ'
+    'n': 'ň'
+    'N': 'Ň'
+    'o': 'ǒ'
+    'O': 'Ǒ'
+    'r': 'ř'
+    'R': 'Ř'
+    's': 'š'
+    'S': 'Š'
+    'z': 'ž'
+    'Z': 'Ž'
+    't': 'ť'
+    'T': 'Ť'
   '~':
     ' ': '~'
-    a: ą
-    A: Ą
-    e: ę
-    E: Ę
-    i: į
-    I: Į
-    l: ł
-    L: Ł
-    o: õ
-    O: Õ
-    u: ų
-    U: Ų
-  ę:
-    ' ': ę
-    a: á
-    A: Á
-    e: é
-    E: É
-    i: i̬
-    I: I̬
-    o: ó
-    O: Ó
-    u: u̬
-    U: U̬
+    'a': 'ą'
+    'A': 'Ą'
+    'e': 'ę'
+    'E': 'Ę'
+    'i': 'į'
+    'I': 'Į'
+    'l': 'ł'
+    'L': 'Ł'
+    'o': 'õ'
+    'O': 'Õ'
+    'u': 'ų'
+    'U': 'Ų'
+  'ę':
+    ' ': 'ę'
+    'a': 'á'
+    'A': 'Á'
+    'e': 'é'
+    'E': 'É'
+    'i': 'i̬'
+    'I': 'I̬'
+    'o': 'ó'
+    'O': 'Ó'
+    'u': 'u̬'
+    'U': 'U̬'
   '`':
     ' ': '`'
-    a: à
-    A: À
-    e: è
-    E: È
-    o: ò
-    O: Ò
-    u: ù
-    U: Ù
-  ^:
-    ' ': ^
-    a: â
-    A: Â
-    e: ê
-    E: Ê
-    g: ĝ
-    G: Ĝ
-    i: î
-    I: Î
-    o: ô
-    O: Ô
-    u: û
-    U: Û
-
-
-android:
-  config:
-#    spellerPackageKey: https://pahkat.uit.no/main/packages/speller-liv?channel=nightly&platform=mobile
-#    spellerPath: liv.bhfst
-  primary:
-    layers:
-      default: |
-        ä õ e r t y u i o p ǭ
-        a s d f g h j k l ȯ ö
-        \s{shift} z x c v b n m ʼ \s{backspace}
-      shift: |
-        Ä Õ E R T Y U I O P Ǭ
-        A S D F G H J K L Ȯ Ö
-        \s{shift} Z X C V B N M ʼ \s{backspace}
-  tablet-600:
-    layers:
-      default: |
-        ä õ e r t y u i o p ǭ
-        a s d f g h j k l ȯ ö
-        \s{shift} z x c v b n m ʼ \s{backspace}
-      shift: |
-        Ä Õ E R T Y U I O P Ǭ
-        A S D F G H J K L Ȯ Ö
-        \s{shift} Z X C V B N M ʼ \s{backspace}
+    'a': 'à'
+    'A': 'À'
+    'e': 'è'
+    'E': 'È'
+    'o': 'ò'
+    'O': 'Ò'
+    'u': 'ù'
+    'U': 'Ù'
+  '^':
+    ' ': '^'
+    'a': 'â'
+    'A': 'Â'
+    'e': 'ê'
+    'E': 'Ê'
+    'g': 'ĝ'
+    'G': 'Ĝ'
+    'i': 'î'
+    'I': 'Î'
+    'o': 'ô'
+    'O': 'Ô'
+    'u': 'û'
+    'U': 'Û'
 
 longpress:
   A: Ā Ä Ǟ
