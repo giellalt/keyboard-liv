@@ -18,15 +18,13 @@ android:
   tablet-600:
     layers:
       default: |
-        ʼ w ǩ ǥ ǧ ŋ đ ǯ ʒ ö ʹ
-        â š e r t y u i o p å
-        a s d f g h j k l õ ä
-        \s{shift} ž z č c v b n m \s{backspace}
+        ä õ e r t y u i o p ǭ
+        a s d f g h j k l ȯ ö
+        \s{shift} z x c v b n m ʼ \s{backspace}
       shift: |
-        ʼ W Ǩ Ǥ Ǧ Ŋ Đ Ǯ Ʒ Ö ʹ
-        Â Š E R T Y U I O P Å
-        A S D F G H J K L Õ Ä
-        \s{shift} Ž Z Č C V B N M \s{backspace}
+        Ä Õ E R T Y U I O P Ǭ
+        A S D F G H J K L Ȯ Ö
+        \s{shift} Z X C V B N M ʼ \s{backspace}
 macOS:
   primary:
     layers:
@@ -48,12 +46,12 @@ macOS:
       alt: |
         ° ! ™ # ¨ % ˇ ¶ • ‚ ‘ – ≠
           © w é ᶖ ᶘ ǝ ú í ó ᶗ „ “
-          á ᶐ ᶑ ^ ᶒ ¥ ∆ ᶓ ᶔ … ~ «
-        ' ᶙ ß č √ ` ᶕ ° ≤ ≥ ÷
+          á ᶐ ᶑ ^ ᶒ å ∆ ᶓ ᶔ … ~ «
+        ' ᶙ ß č √ ´ ᶕ ° ≤ ≥ ÷
       alt+shift: |
-        • ! @ ‹ › % § ¶ ° “ ‘ — ≠
+        • ! @ ‹ › ʼ § ¶ ° “ ‘ — ≠
           © ∑ Ē Ŗ † ® Ū Ī Ō ¬ ” ’
-          Ā Š ∂ ^ Ģ ¥ ∆ Ķ Ļ … ~ »
+          Ā Š ∂ ^ Ģ Å ∆ Ķ Ļ … ~ »
         ¥ Ž ß Č ◊ ` Ņ ° « » ÷
       ctrl: |
         § 1 2 3 4 5 6 7 8 9 0 - =
@@ -85,8 +83,8 @@ macOS:
     default: ['ˉ', '´', 'ˇ']
     shift: ['~']
     caps: ['ę']
-    alt: ['¨']
-    alt+shift: ['ˇ']
+    alt: ['¨', '´', 'ß', '∆']
+    alt+shift: ['ˇ', '`']
 windows:
   config:
     locale: liv-Latn
@@ -200,7 +198,7 @@ transforms:
     'e': 'ē'
     'E': 'Ē'
     'g': 'ģ'
-    'G': 'Ǵ'
+    'G': 'Ģ'
     'i': 'ī'
     'I': 'Ī'
     'k': 'ķ'
@@ -231,6 +229,7 @@ transforms:
     'Y': 'Ȳ'
     'z': 'ž'
     'Z': 'Ž'
+    'å': 'å\u{304}'
   '¨':
     ' ': '¨'
     'a': 'ä'
@@ -245,6 +244,14 @@ transforms:
     'Z': 'Ż'
     'u': 'ü'
     'U': 'Ü'
+  'ß':
+    ' ': 'ß'
+    'e': 'e̮'
+    'i': 'i̮'
+  '∆':
+    ' ': '∆'
+    'u': 'ᵘ'
+    'i': 'ⁱ'
   'ˇ':
     ' ': 'ˇ'
     'c': 'č'

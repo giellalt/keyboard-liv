@@ -1,10 +1,17 @@
 locales:
+  liv:
+    name: Livonian Keyboards
+    description: >-
+      Mobile OS keyboards for the Livonian language from the Divvun group
+      at UiT.
   en:
-    name: Liv Keyboards
-    description: Mobile OS keyboards for the Liv language from the Divvun group at UiT.
+    name: Livonian Keyboards
+    description: >-
+      Mobile OS keyboards for the Livonian language from the Divvun group
+      at UiT.
   nb:
-    name: Liv tastatur
-    description: Mobiltastatur for Liv fra Divvun-gruppa.
+    name: Livonian tastatur
+    description: Mobiltastatur for Livonian fra Divvun-gruppa.
 author: 'The Divvun Group, UiT Norgga árktalaš universitehta'
 copyright: (c) 2017 Divvun/Giellatekno/UiT
 email: feedback@divvun.no
