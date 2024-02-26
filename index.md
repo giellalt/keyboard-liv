@@ -1,10 +1,9 @@
-# Documentation for the Liv keyboards
-
+# Documentation for the Livonian keyboards
 
 # Layouts
 
--   [Layout overview](layout.html)
+-   [Layout overview](layout.md)
 
 # Other information
 
-Add text and links as necessary.
+Add text and links as needed.

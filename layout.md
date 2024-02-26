@@ -1,4 +1,4 @@
-# Keyboard layout(s) for Liv
+# Keyboard layout(s) for Livonian
 
 **Legend:**
 
@@ -6,7 +6,6 @@
 | ----------:|:-------:|:------------:|:-----------------------:|:------------------------:|
 |**Standard**| black   | red          | blue                    | purple                   |
 |**Deadkey** | green   | orange       | pink                    | green                    |
-
 
 # Keyboard Layouts
 
