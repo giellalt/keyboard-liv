@@ -1,5 +1,5 @@
 displayNames:
-  liv: Līv
+  liv: Līvõ kēļ
   en: Livonian
 android:
   config:
@@ -110,7 +110,7 @@ macOS:
 windows:
   config:
     locale: liv-Latn
-    languageName: Līv
+    languageName: Līvõ kēļ
   primary:
     layers:
       default: |
